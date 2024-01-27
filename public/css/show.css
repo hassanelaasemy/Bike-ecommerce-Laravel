@@ -1,0 +1,295 @@
+.product_shose {
+  /* position: absolute; */
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+  padding: 0 15%;
+}
+
+.cont_prod {
+  /* border: 2px solid red; */
+  display: flex;
+}
+
+.image_product_shose {
+  width: 50%;
+}
+
+.image_product_shose img {
+  width: 100%;
+  height: 100%;
+}
+
+/*================ info_product_shose   ====================== */
+.info_product_shose {
+  width: 50%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+.info_product_shose .price_prod {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.info_product_shose .price_prod .p1 {
+  margin: 0%;
+  font-size: 20px;
+  /* padding-left: 30px; */
+  color:#bd031c;
+  font-weight: 600;
+}
+
+.info_product_shose .price_prod .p2 {
+  text-decoration: line-through;
+}
+
+.info_prod {
+  color:black;
+  padding-left: 10px;
+
+}
+
+.cont_prod .form-select {
+  width: 20%;
+}
+
+.btn {
+  color: #bd031c;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #bd031c;
+  /* padding: 10px 20px;     */
+  font-size: 15px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  
+}
+.btn a {
+    text-decoration: none;
+    
+    color: inherit;
+    width: 100%;
+}
+.btn:hover {
+  color: white;
+  
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #bd031c;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+
+/* 
+.button {
+  --width: 150px;
+  --height: 30px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #bd031c;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #000000;
+  font-size: 0.9rem;
+  color: #000000;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0px solid transparent;
+  border-top-color: #ffffff;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #000000;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: #ffffff;
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+
+
+
+
+
+/* =================== media ======================= */
+@media only screen and (max-width: 1480px) {
+  .product_shose {
+      padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .product_shose {
+      padding: 0 5%;
+      margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .product_shose {
+      padding: 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .cont_prod {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .info_product_shose {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: auto;
+  }
+
+  .image_product_shose {
+      width: 100%;
+  }
+
+  .info_prod,
+  .conseil_prod,
+  .cont_prod,
+  .btns {
+      margin-top: 30px;
+  }
+
+  .btns button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .info_product_shose .price_prod {
+      width: 100%;
+      justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .product_shose {
+      padding: 0 5%;
+      margin-top: 25px;
+  }
+
+  .info_product_shose {
+      width: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .info_product_shose {
+      width: 100%;
+  }
+}
